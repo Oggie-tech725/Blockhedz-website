@@ -158,7 +158,7 @@
     .center-links {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: left;
       font-family: sans-serif;
     }
 
