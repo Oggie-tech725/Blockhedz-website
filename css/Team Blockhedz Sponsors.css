@@ -163,8 +163,12 @@
       }
 
       .logo {
-        height: 70px !important;
+        height: 70px;
         margin-right: 10px !important;
+      }
+
+      .images_logos {
+       width: 80px !important;
       }
 
       .top-stripe {
