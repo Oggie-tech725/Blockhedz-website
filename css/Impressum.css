@@ -1,0 +1,180 @@
+@import url('https://fonts.cdnfonts.com/css/impact');
+
+.top-stripe {
+      background-color: #febe00;
+      height: 130px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+
+    .team-name {
+      color: black;
+      font-size: 500%;
+      margin: 0;
+      text-align: center;
+      font-family: Impact;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+
+
+    .hamburger {
+      z-index: 99;
+      display: inline-block;
+      cursor: pointer;
+      position: fixed;
+      top: 50px;
+      right: 20px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    .change .bar1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+      opacity: 0;
+    }
+
+    .change .bar3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .menu {
+      display: none;
+      position: fixed;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      top: 160px;
+      right: 20px;
+    }
+
+    .menu a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Impact', fantasy;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .menu a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .news-section {
+      margin-top: 140px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .news-title {
+      font-family: 'Impact', fantasy;
+      font-size: 48px;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #FFC300;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .news-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .team-section {
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .team-title {
+      font-family: sans-serif;
+      font-size: 48px;
+      text-align: center;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 3px solid #FFC300;
+      display: inline-block;
+      padding-bottom: 10px;
+
+    }
+
+    .team-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+
+    .bottom-row {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .content-generator-output {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+ /* Mobile styles */
+    @media screen and (max-width: 768px) {
+      .team-name {
+        font-size: 200%
+      }
+
+      .logo {
+        height: 70px !important;
+        margin-right: 10px !important;
+      }
+
+      .top-stripe {
+        height: 100px;
+      }
+
+      .hamburger {
+        top: 30px;
+      }
+
+      .menu {
+        top: 130px;
+      }
+
+      .news-section {
+        margin-top: 120px;
+      }
+
+      .news-title {
+        font-size: 36px;
+      }
+    }
